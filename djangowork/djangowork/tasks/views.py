@@ -8,3 +8,6 @@ def index(request):
         "tasks": tasks #on the right means its the value the variables takes on, its a python variable
         #on the left, its the name of the varbialbe that html can access
     })
+
+def add(request):
+    return render(request, "tasks/add.html")
